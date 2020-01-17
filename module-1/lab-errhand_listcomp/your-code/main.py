@@ -136,8 +136,9 @@ except IndexError:
 # Check in provided resources the type of error you may use. 
 
 while True:
-    suma = 0
     try:
+        #había puesto suma fuera del try y no sumaba (corregido)
+        suma = 0
         entrada = int(input("Introduce números enteros y pulsa 1 cuando acabes "))
         if entrada == 1:
             break
