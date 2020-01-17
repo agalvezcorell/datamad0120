@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import io    
-=======
 import io   
->>>>>>> 899e9f0d5de01fa78400cf84ba0a9388bb19eb83
 import sys
 #Example:  
 
