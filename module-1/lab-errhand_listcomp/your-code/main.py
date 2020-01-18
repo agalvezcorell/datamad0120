@@ -238,17 +238,23 @@ class Customiced(Error):
     pass
 minimo = 2
 Total_Marks = int(input("Enter Total Marks Scored: ")) 
-while True:
+notas = []
+while len(notas)< Total_Marks:
     try:
         Num_of_Sections = int(input("Enter Num of Sections: "))
-        if Num_of_Sections < minimo:
-            raise Customiced
+        if Num_of_Sections > minimo:
+            notas.append(Num_of_Sections)
         else:
-            break
+            raise Customiced
+
+        
     except Customiced:
-        print ("Debes introducir más de dos marcas")
+        print ("El número debe ser mayor que 2")
     except ValueError:
         print("Debes introducir un número entero")
+
+print ("Has introducido {} notas." .format(Total_Marks))
+print ("Las notas que has introducido son: ", (notas))
 
 
 
