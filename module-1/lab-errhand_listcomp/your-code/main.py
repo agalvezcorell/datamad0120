@@ -10,6 +10,8 @@ my_listComprehension = [1/egg for egg in eggs]
 print("Ejemplo")
 print(my_listComprehension)
 
+
+
 #1. Calculate the square number of the first 20 numbers. Use square as the name of the list.
 # Remember to use list comprehensions and to print your results
 cuadrados = [i**2 for i in range(1,20)]
@@ -83,9 +85,8 @@ print(consonantes)
 # Remember to use list comprehensions and to print your results.
 
 import os
-path = "/Users/soyungalgo/documents/github/datamad0120"
+path = "../../../../datamad0120"
 files = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
-#files = os.listdir("/Users/soyungalgo/documents/github/datamad0120")
 print("Ejercicio 10")
 print(files)
 
