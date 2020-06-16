@@ -55,23 +55,36 @@ Y veremos por consola el siguiente output.
 exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 Bonus
 Almacena en una variable name tu nombre.
+export name='Amanda';
 
 Imprime esa variable.
+echo $name  ;
 
 Crea un directorio nuevo que se llame como el contenido de la variable name.
+mkdir 'Amanda';
 
 Elimina ese directorio.
+rmdir 'Amanda';
 
 Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for
 
 Imprime los ficheros
+for file in $( ls lorem); do echo item: $file done
+
 Imprime las longitudes de los nombres de los ficheros
+for file in $( ls lorem); do echo -n "$file" | wc -m; done
+
 Imprime outputs con la siguiente estructura: lorem has 5 characters lenght
 Muestra los procesos de forma jerárquica que se están ejecutando en tu ordenador:
-
+    1. Usando el comando top o htop
+    2. Usando el comando ps con argumentos
 Usando el comando top o htop
+
 Usando el comando ps con argumentos
+ps -ejH
+
 Muestra información sobre tu procesador por pantalla
+sudo dmidecode
 
 Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
 
