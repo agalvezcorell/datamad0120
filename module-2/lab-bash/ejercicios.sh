@@ -22,7 +22,8 @@ tail -n3 lorem-copy/sed.txt
 - Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem-copy. Deberás usar sed.
 sed 's/et/ET/g' lorem-copy/at.txt
 - Encuentra al usuario activo en el sistema.
-#w
+who
+whoami
 - Encuentra dónde estás en tu sistema de ficheros.
 pwd
 - Lista los archivos que terminan por .txt en la carpeta lorem.
