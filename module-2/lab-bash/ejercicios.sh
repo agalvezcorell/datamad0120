@@ -2,7 +2,7 @@ Ejercicios
 - Imprime en consola Hello World.
 echo "Hello World"
 - Crea un directorio nuevo llamado new_dir.
- mkdir new_dir
+mkdir new_dir
 - Elimina ese directorio.
 rmdir new_dir
 - Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy.
@@ -80,14 +80,25 @@ Muestra los procesos de forma jerárquica que se están ejecutando en tu ordenad
     2. Usando el comando ps con argumentos
 Usando el comando top o htop
 
+top;
+
 Usando el comando ps con argumentos
+
 ps -ejH
+ps axjf;
+ps -ef;
 
 Muestra información sobre tu procesador por pantalla
 sudo dmidecode
 
 Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
 
+echo "alias ll='ls -l" >> ~/.bashrc;
+echo "alias rm='rm -i'" >> ~/.bashrc;
+echo "alias cs='cd;ls'" >> ~/.bashrc;
+
 Comprime las carpetas lorem y lorem-copy en un archivo llamado lorem-compressed.tar.gz
+tar -czf lorem-compressed.tar.gz lorem lorem-copy;
 
 Descomprime el archivo lorem-compressed.tar.gz en la carpeta lorem-uncompressed
+tar -xvf lorem-compressed.tar.gz;
